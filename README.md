@@ -17,3 +17,6 @@
 - fastfetch
 - wal
 - rofi
+- Nerd Fonts - Fira
+- Nerd Fonts - Hack
+- GNOME UI Font (Inter)
