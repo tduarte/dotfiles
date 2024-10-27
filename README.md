@@ -16,3 +16,4 @@
 - oh-my-zsh*
 - fastfetch
 - wal
+- rofi
