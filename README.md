@@ -20,3 +20,5 @@
 - Nerd Fonts - Fira
 - Nerd Fonts - Hack
 - GNOME UI Font (Inter)
+- Bibata-Modern-Ice
+- White-Sur-Icons (Alt)
