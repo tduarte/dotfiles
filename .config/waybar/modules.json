@@ -154,7 +154,7 @@
   // Clock
   "clock": {
     "format": "{:%H:%M %a}",
-    "tooltip": false
+    "tooltip-format": "{:%B %d, %Y}"
   },
   // Battery
   "battery": {

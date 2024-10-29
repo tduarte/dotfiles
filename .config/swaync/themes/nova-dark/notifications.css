@@ -16,7 +16,7 @@
 
   all: unset;
   font-size: 14px;
-  font-family: "GNOME UI 10";
+  font-family: "GNOME UI";
   transition: 200ms;
 
 }

@@ -12,7 +12,7 @@
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
-    font:                       "Fira Sans 11";
+    font:                       "GNOME UI 11";
     show-icons:                 true;
     icon-theme:                 "kora";
     display-drun:               "APPS";
@@ -27,15 +27,6 @@ configuration {
     window-format:              "{w} · {c} · {t}";
     
 }
-
-/* ---- Load font ---- */
-@import "~/.config/ml4w/settings/rofi-font.rasi"
-
-/* ---- Load pywal colors (custom wal template) ---- */
-@import "~/.cache/wal/colors-rofi-pywal"
-
-/* ---- Load border width ---- */
-@import "~/.config/ml4w/settings/rofi-border.rasi"
 
 /* ---- Window ---- */
 window {

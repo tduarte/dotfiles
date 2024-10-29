@@ -7,12 +7,13 @@
 @define-color textdark @FFFFFF;
 
 window {
-        background-color: transparent
+    background-color: transparent
 }
 
 /* Outer bar container, takes all the window width/height */
 #outer-box {
-	margin: 0px
+	margin: 0px;
+	background-color: transparent;
 }
 
 /* Inner bar container, surrounds buttons */
@@ -33,6 +34,10 @@ button, image {
 }
 
 button {
+	color: @textdark;
+	background: none;
+	border: none;
+	box-shadow: none;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: 5px
