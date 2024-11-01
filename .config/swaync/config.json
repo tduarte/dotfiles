@@ -50,11 +50,11 @@
           "command": "nm-connection-editor"
         },
         {
-          "label": "󰂯",
+          "label": "",
           "command": "overskride"
         },
         {
-          "label": "",
+          "label": "",
           "command": "missioncenter"
         },
         {

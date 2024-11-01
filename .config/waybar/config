@@ -10,7 +10,6 @@
     "include": "~/.config/waybar/modules.json",
     // Modules Left
     "modules-left": [
-        "group/settings",
         "group/quicklinks",
         "custom/calculator",
         "hyprland/window",

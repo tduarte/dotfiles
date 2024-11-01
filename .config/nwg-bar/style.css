@@ -4,10 +4,12 @@
 @define-color backgrounddark @color0;
 @define-color accentcolor @color7;
 @define-color border @color11;
-@define-color textdark @FFFFFF;
+@define-color textdark #FFFFFF;
 
 window {
-    background-color: transparent
+    background-color: transparent;
+	text-shadow: none;
+	box-shadow: none;
 }
 
 /* Outer bar container, takes all the window width/height */
@@ -23,6 +25,8 @@ window {
 	border-style: solid;
 	border-color: @border;
 	border-width: 2px;
+	box-shadow: none;
+	text-shadow: none;
 	padding: 5px;
 	margin: 5px
 }
@@ -30,6 +34,7 @@ window {
 button, image {
 	background: none;
 	border: none;
+	text-shadow: none;
 	box-shadow: none
 }
 
@@ -38,11 +43,14 @@ button {
 	background: none;
 	border: none;
 	box-shadow: none;
+	text-shadow: none;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: 5px
 }
 
 button:hover {
-	background-color: @accentcolor
+	background-color: @accentcolor;
+	text-shadow: none;
+	box-shadow: none;
 }

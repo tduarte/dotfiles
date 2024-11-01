@@ -33,9 +33,9 @@
 .control-center .notification-row .notification-background,
 .control-center .notification-row .notification-background .notification.critical {
   background-color: @background;
-  border-radius: 16px;
+  border-radius: 14px;
   margin: 4px 0px;
-  padding: 4px;
+  padding: 8px;
 }
 
 .control-center .notification-row .notification-background .notification.critical {
@@ -43,18 +43,33 @@
 }
 
 .control-center .notification-row .notification-background .notification .notification-content {
-  margin: 6px;
-  padding: 2px;
+  margin: 8px;
+  /* padding: 8px; */
 }
 
 .control-center .notification-row .notification-background .notification > *:last-child > * {
-  min-height: 3.4em;
+  /* min-height: 3.4em; */
 }
 
 .control-center .notification-row .notification-background .notification > *:last-child > * .notification-action {
   background: alpha(@selected, .6);
   border-radius: 12px;
   margin: 6px;
+}
+
+.control-center .notification-row .notification-background .notification .notification-content .summary {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.control-center .notification-row .notification-background .notification .notification-content .time {
+  color: alpha(#FFFFFF, .4);
+  font-size: 12px;
+}
+
+.control-center .notification-row .notification-background .notification .notification-content .body {
+  color: alpha(#FFFFFF, .7);
+  font-size: 12px;
 }
 
 .control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
@@ -68,7 +83,7 @@
 /* Buttons */
 
 .control-center .notification-row .notification-background .close-button {
-  background: transparent;
+  background: @color7;
   border-radius: 6px;
   margin: 0px;
   padding: 4px;
