@@ -54,8 +54,8 @@
           "command": "overskride"
         },
         {
-          "label": "",
-          "command": "missioncenter"
+          "label": "",
+          "command": "io.elementary.settings"
         },
         {
           "label": "",
