@@ -12,13 +12,15 @@
 - nwg-bar
 - btop
 - zsh
-- ohmyposh*
-- oh-my-zsh*
+- oh-my-posh
+- oh-my-zsh
 - fastfetch
 - wal
 - rofi
-- Nerd Fonts - Fira
 - Nerd Fonts - Hack
 - GNOME UI Font (Inter)
 - Bibata-Modern-Ice
 - White-Sur-Icons (Alt)
+
+Wallpaper by OUTRUNYOUTH (Cropped).
+Got it on MKBHD's Panels https://panels.art/w/jfl
