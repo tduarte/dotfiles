@@ -1,4 +1,4 @@
-![Preview](https://raw.githubusercontent.com/tduarte/dotfiles/refs/heads/master/preview/2024-11-01-215133_hyprshot.png)
+[Hyprland Video Example](https://github.com/user-attachments/assets/810a609c-4456-4daf-b454-cac32a83cda1)
 
 My personal Hyprland configuration. based on [M4LW Dotfiles](https://github.com/mylinuxforwork/dotfiles/tree/main?tab=readme-ov-file).
 
