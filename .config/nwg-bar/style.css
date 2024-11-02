@@ -1,10 +1,10 @@
 @import '../../.cache/wal/colors-waybar.css';
 
-@define-color backgroundlight @color7;
-@define-color backgrounddark @color0;
-@define-color accentcolor @color7;
+@define-color backgroundlight @foreground;
+@define-color backgrounddark @background;
+@define-color accentcolor @color1;
 @define-color border @color11;
-@define-color textdark #FFFFFF;
+@define-color textdark @foreground;
 
 window {
     background-color: transparent;
@@ -51,7 +51,7 @@ button {
 
 button:hover {
 	background-color: @accentcolor;
-	color: @accentcolor;
+	color: @backgroundlight;
 	text-shadow: none;
 	box-shadow: none;
 }
