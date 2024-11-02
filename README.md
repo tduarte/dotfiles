@@ -2,7 +2,7 @@
 
 My personal Hyprland configuration. based on [M4LW Dotfiles](https://github.com/mylinuxforwork/dotfiles/tree/main?tab=readme-ov-file).
 
-# Required Packages [^1]
+# Required Packages
 
 ## Base Packages
 ### The main packages for a basic Hyprland setup
@@ -52,4 +52,5 @@ My personal Hyprland configuration. based on [M4LW Dotfiles](https://github.com/
 - Icons (optional): [White-Sur-Icons - Alternative Version](https://github.com/vinceliuice/WhiteSur-icon-theme)
 - [Wallpaper](https://panels.art/w/jfl) by [OUTRUNYOUTH](https://www.instagram.com/outrunyouth/?hl=en) (Cropped).
 
-[^1]: Some packages are definitely missing. Please [open an issue](https://github.com/tduarte/dotfiles/issues/new/choose) if you find anything missing so I can update this README.
+> [!NOTE]
+> Some packages are definitely missing. Please [open an issue](https://github.com/tduarte/dotfiles/issues/new/choose) if you find anything missing so I can update this README.
