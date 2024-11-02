@@ -1,8 +1,8 @@
 ![Preview](https://raw.githubusercontent.com/tduarte/dotfiles/refs/heads/master/preview/2024-11-01-215133_hyprshot.png)
 
-Based on [M4LW Dotfiles](https://github.com/mylinuxforwork/dotfiles/tree/main?tab=readme-ov-file).
+My personal Hyprland configuration. based on [M4LW Dotfiles](https://github.com/mylinuxforwork/dotfiles/tree/main?tab=readme-ov-file).
 
-# Required Packages
+# Required Packages [^1]
 
 ## Base Packages
 - hyprland
@@ -38,11 +38,11 @@ Based on [M4LW Dotfiles](https://github.com/mylinuxforwork/dotfiles/tree/main?ta
 - Nerd Fonts - Hack
 - GNOME UI Font (Inter)
   
-### Themes
+## Themes
 - Cursor: [Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor)
 - Icons: [White-Sur-Icons - Alternative Version](https://github.com/vinceliuice/WhiteSur-icon-theme)
 
 Wallpaper by [OUTRUNYOUTH](https://www.instagram.com/outrunyouth/?hl=en) (Cropped).
 Got it on [MKBHD's Panels](https://panels.art/w/jfl)
 
-_Some packages will definitely be missing, I will try to update this with other dependences as I go_
+[^1]: Some packages are definitely missing. Please open an issue if you find anything missing so I can update this README.
