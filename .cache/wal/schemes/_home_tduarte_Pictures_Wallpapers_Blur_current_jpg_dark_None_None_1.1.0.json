@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/tduarte/Pictures/Wallpapers/Blur/current.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0b2e36",
+        "foreground": "#cbdee9",
+        "cursor": "#cbdee9"
+    },
+    "colors": {
+        "color0": "#0b2e36",
+        "color1": "#5FADD5",
+        "color2": "#65BCC9",
+        "color3": "#0BE1E4",
+        "color4": "#CAAAAA",
+        "color5": "#9FABD4",
+        "color6": "#D5ABD7",
+        "color7": "#cbdee9",
+        "color8": "#8e9ba3",
+        "color9": "#5FADD5",
+        "color10": "#65BCC9",
+        "color11": "#0BE1E4",
+        "color12": "#CAAAAA",
+        "color13": "#9FABD4",
+        "color14": "#D5ABD7",
+        "color15": "#cbdee9"
+    }
+}

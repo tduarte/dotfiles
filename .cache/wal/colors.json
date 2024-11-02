@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tduarte/Pictures/Wallpapers/IMG_5801-cropped.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0f1d2a",
+        "foreground": "#f4ebdc",
+        "cursor": "#f4ebdc"
+    },
+    "colors": {
+        "color0": "#0f1d2a",
+        "color1": "#D56278",
+        "color2": "#C0947A",
+        "color3": "#E0748A",
+        "color4": "#E79D9D",
+        "color5": "#F0ADBC",
+        "color6": "#ECCDA6",
+        "color7": "#f4ebdc",
+        "color8": "#aaa49a",
+        "color9": "#D56278",
+        "color10": "#C0947A",
+        "color11": "#E0748A",
+        "color12": "#E79D9D",
+        "color13": "#F0ADBC",
+        "color14": "#ECCDA6",
+        "color15": "#f4ebdc"
+    }
+}

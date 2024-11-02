@@ -51,6 +51,7 @@ button {
 
 button:hover {
 	background-color: @accentcolor;
+	color: @accentcolor;
 	text-shadow: none;
 	box-shadow: none;
 }

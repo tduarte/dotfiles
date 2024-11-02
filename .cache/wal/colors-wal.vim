@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/tduarte/Pictures/Wallpapers/IMG_5801-cropped.jpg"
+let background = "#0f1d2a"
+let foreground = "#f4ebdc"
+let cursor     = "#f4ebdc"
+
+" Colors
+let color0  = "#0f1d2a"
+let color1  = "#D56278"
+let color2  = "#C0947A"
+let color3  = "#E0748A"
+let color4  = "#E79D9D"
+let color5  = "#F0ADBC"
+let color6  = "#ECCDA6"
+let color7  = "#f4ebdc"
+let color8  = "#aaa49a"
+let color9  = "#D56278"
+let color10 = "#C0947A"
+let color11 = "#E0748A"
+let color12 = "#E79D9D"
+let color13 = "#F0ADBC"
+let color14 = "#ECCDA6"
+let color15 = "#f4ebdc"
