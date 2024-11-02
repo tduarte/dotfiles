@@ -81,7 +81,7 @@
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --interval-seconds 1800 --network-interval-seconds 1800",
-    "on-click": "alacritty --hold --class dotfiles-floating -e yay",
+    "on-click": "kitty --class dotfiles-floating yay",
     "on-click-right": "gnome-software"
   },
   // Updates
@@ -90,7 +90,7 @@
     "interval": 1800,
     "exec": "checkupdates | wc -l",
     "exec-if": "exit 0",
-    "on-click": "alacritty -e 'sudo pacman -Syu'; pkill -SIGRTMIN+8 waybar",
+    "on-click": "kitty 'sudo pacman -Syu'; pkill -SIGRTMIN+8 waybar",
     "on-click-right": "gnome-software",
     "tooltip-format": "System Updates",
     "signal": 8
