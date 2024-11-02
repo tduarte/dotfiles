@@ -3,6 +3,8 @@
 Based on [M4LW Dotfiles](https://github.com/mylinuxforwork/dotfiles/tree/main?tab=readme-ov-file).
 
 # Required Packages
+
+### Packages
 - hyprland
 - waybar
 - swaync
@@ -20,10 +22,13 @@ Based on [M4LW Dotfiles](https://github.com/mylinuxforwork/dotfiles/tree/main?ta
 - fastfetch
 - wal
 - rofi
+### Fonts
+- Font Awesome 6 Free
 - Nerd Fonts - Hack
 - GNOME UI Font (Inter)
-- Bibata-Modern-Ice
-- White-Sur-Icons (Alt)
+### Themes
+- Cursor: Bibata-Modern-Ice
+- Icons: White-Sur-Icons (Alt)
 
 Wallpaper by OUTRUNYOUTH (Cropped).
 Got it on MKBHD's Panels https://panels.art/w/jfl
