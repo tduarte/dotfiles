@@ -12,7 +12,7 @@
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
-    font:                       "Fira Sans 11";
+    font:                       "GNOME UI 11";
     show-icons:                 false;
     icon-theme:                 "kora";
     display-drun:               "APPS";
