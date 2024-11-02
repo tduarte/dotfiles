@@ -21,6 +21,7 @@ My personal Hyprland configuration. based on [M4LW Dotfiles](https://github.com/
 - waypaper
 - wal
 - rofi
+- Zen Browser (Flatpak)
 
 ## Terminal Packages
 ### Applications related to my terminal configurations
