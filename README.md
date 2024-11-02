@@ -1,3 +1,5 @@
+![Preview](https://raw.githubusercontent.com/tduarte/dotfiles/refs/heads/master/preview/2024-11-01-215133_hyprshot.png)
+
 # Required Packages
 
 - hyprland
