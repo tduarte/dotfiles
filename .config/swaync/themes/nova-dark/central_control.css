@@ -1,16 +1,16 @@
-@define-color text            @foreground;
-@define-color background-alt  alpha(@color8, .4);
-@define-color selected        @color3;
-@define-color hover           alpha(@selected, .4);
-@define-color urgent          @color2;
+@define-color backgroundlight   @foreground;
+@define-color backgrounddark    @background;
+@define-color text              @foreground;
+@define-color buttons           alpha(@color3, .3);
+@define-color selected          @color3;
+@define-color hover             alpha(@selected, .7);
+@define-color urgent            @color2;
 
 * {
-  color: @text;
-  all: unset;
   font-size: 14px;
   font-family: "GNOME UI";
   transition: 200ms;
-
+  color: @text;
 }
 
 /* Avoid 'annoying' backgroud */
@@ -21,7 +21,7 @@
 /* CONTROL CENTER ------------------------------------------------------------------------ */
 
 .control-center {
-  background: alpha(@background, .55);
+  background: alpha(@backgrounddark, .5);
   border-radius: 10px;
   border: 2px solid @selected;
   box-shadow: 0 0 10px 0 rgba(0,0,0,.6);
@@ -32,7 +32,7 @@
 /* Notifications  */
 .control-center .notification-row .notification-background,
 .control-center .notification-row .notification-background .notification.critical {
-  background-color: @background;
+  background-color: @backgrounddark;
   border-radius: 14px;
   margin: 4px 0px;
   padding: 8px;
@@ -83,7 +83,7 @@
 /* Buttons */
 
 .control-center .notification-row .notification-background .close-button {
-  background: @color7;
+  background: alpha(@color3, .6);
   border-radius: 6px;
   margin: 0px;
   padding: 4px;
@@ -91,6 +91,7 @@
 
 .control-center .notification-row .notification-background .close-button:hover {
   background-color: @selected;
+  color: @backgrounddark;
 }
 
 .control-center .notification-row .notification-background .close-button:active {
@@ -145,13 +146,16 @@ progressbar {
 }
 
 .widget-title button {
-  background: @background-alt;
+  background: @buttons;
   border-radius: 6px;
   padding: 10px 16px;
 }
 
 .widget-title button:hover {
   background-color: @hover;
+}
+.widget-title button:hover label {
+  color: @backgroundlight;
 }
 
 .widget-title button:active {
@@ -165,7 +169,7 @@ progressbar {
 }
 
 .widget-dnd > switch {
-  background: @background-alt;
+  background: @buttons;
   font-size: initial;
   border-radius: 8px;
   box-shadow: none;
@@ -178,6 +182,10 @@ progressbar {
 
 .widget-dnd > switch:checked {
   background: @selected;
+}
+
+.widget-dnd > switch:checked label {
+  color: @backgroundlight;
 }
 
 .widget-dnd > switch:checked:hover {
@@ -200,30 +208,38 @@ progressbar {
 .widget-buttons-grid>flowbox>flowboxchild>button {
   margin: 4px 4px;
   padding: 6px 16px;
-  background: @hover;
+  background: @buttons;
   border-radius: 8px;
   min-width: 40px;
   min-height: 20px;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-  background: @selected;
+  background: @hover;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover label {
+  color: @backgroundlight;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button.toggle:checked {
   background: @color1;
 }
 
+.widget-buttons-grid>flowbox>flowboxchild>button.toggle:checked label {
+  color: @backgroundlight;
+}
+
   /* Music player */
 .widget-mpris {
-    background: @background;
+    background: @backgrounddark;
     border-radius: 10px;
     margin:  20px 6px;
 }
 
   /* NOTE: Background need *opacity 1* otherwise will turn into the album art blurred  */
 .widget-mpris-player {
-    background-color: @background;
+    background-color: @backgrounddark;
     border-radius: 10px;
     padding: 12px;
     padding-bottom: 0px;

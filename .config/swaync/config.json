@@ -58,7 +58,7 @@
           "command": "missioncenter"
         },
         {
-          "label": "",
+          "label": "",
           "type": "toggle",
           "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && hyprshade on blue-light-filter || hyprshade off'",
           "update-command": "sh -c '[[ $(hyprshade current) == \"blue-light-filter\" ]] && echo true || echo false'"

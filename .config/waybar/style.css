@@ -6,7 +6,7 @@
 @define-color backgrounddark @foreground;
 @define-color backgroundlight @background;
 
-@define-color workspacesbackground1 @background;
+@define-color workspacesbackground1 @color9;
 @define-color workspacesbackground2 @foreground;
 
 @define-color bordercolor @foreground;
@@ -26,9 +26,9 @@
 }
 
 window#waybar {
-    background: alpha(@backgrounddark, 0.1);
+    background: alpha(@backgroundlight, 0.2);
     border-bottom: 0px solid @bordercolor;
-    color: @textcolor2;
+    color: @textcolor1;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -106,7 +106,7 @@ tooltip label {
     margin: 8px 15px 8px 0px;
     padding: 2px 10px 0px 10px;
     border-radius: 12px;
-    color: @textcolor;
+    color: @textcolor1;
     font-size: 16px;
     font-weight: 600;
     opacity: 0.8;
