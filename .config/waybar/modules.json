@@ -45,14 +45,11 @@
   // Hyprland Window
   "hyprland/window": {
     "rewrite": {
-      "(.*) - Brave": "$1",
-      "(.*) — Zen Browser": "  $1",
-      "(.*) - Brave Search": "$1",
-      "(.*) - Outlook": "$1",
-      "(.*) Microsoft Teams": "$1",
-      "Steam": " Steam",
-      "Friends List": " Friends",
-      "• Discord (.*)": " $1"
+      "(.*) — Zen Browser": "   $1", // Custom Title for Zen
+      "(.*) - Code - OSS": "  $1", // Custom Title for VS Code
+      "Steam": "   Steam", // Custom Title for Steam
+      "Friends List": " Friends", // Custom Title for Steam Friends
+      "Equibop": " Discord$1" // Custom Title for Equibop
     },
     "separate-outputs": true
   },
