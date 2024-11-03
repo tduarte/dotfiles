@@ -55,7 +55,7 @@
         },
         {
           "label": "",
-          "command": "missioncenter"
+          "command": "io.elementary.settings"
         },
         {
           "label": "",
