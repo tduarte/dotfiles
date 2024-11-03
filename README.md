@@ -1,6 +1,4 @@
 [Hyprland Video Example](https://github.com/user-attachments/assets/810a609c-4456-4daf-b454-cac32a83cda1)
-[hyprlock.webm](https://github.com/user-attachments/assets/49bd8cc6-291d-42d9-ba97-7476c24e5a20)
-
 
 My personal Hyprland configuration. based on [M4LW Dotfiles](https://github.com/mylinuxforwork/dotfiles/tree/main?tab=readme-ov-file).
 
