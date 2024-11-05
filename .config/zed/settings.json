@@ -8,18 +8,32 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "base_keymap": "VSCode",
-  "telemetry": {
-    "metrics": true
-  },
+  "tab_size": 2,
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "format_on_save": "on",
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Rosé Pine Moon"
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "theme": "tduarte",
+  "experimental.theme_overrides": {
+    "editor.active_line.background": "#be93fa0d",
+    "editor.active_line_number": "#bd93f9",
+    "modified": "#bd93f9"
+  },
+  "terminal": {
+    "font_family": "Hack Nerd Font Mono",
+    "blinking": "on",
+    "font_size": 15,
+    "working_directory": "current_project_directory",
+    "copy_on_select": true
   },
   "scrollbar": {
     "show": "never"
+  },
+  "file_types": {
+    "JSONC": ["json"],
+    "TOML": ["conf"]
   }
 }
