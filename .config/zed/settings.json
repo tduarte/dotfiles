@@ -20,6 +20,7 @@
   "experimental.theme_overrides": {
     "editor.active_line.background": "#be93fa0d",
     "editor.active_line_number": "#bd93f9",
+    "border.variant": "#e0758a33",
     "modified": "#bd93f9"
   },
   "terminal": {
