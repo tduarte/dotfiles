@@ -1,10 +1,10 @@
 #!/bin/bash
 #   ____ _____ _  __
 #  / ___|_   _| |/ /
-# | |  _  | | | ' / 
-# | |_| | | | | . \ 
+# | |  _  | | | ' /
+# | |_| | | | | . \
 #  \____| |_| |_|\_\
-#                   
+#
 # Source: https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland
 
 config="$HOME/.config/gtk-3.0/settings.ini"
@@ -16,7 +16,7 @@ icon_theme="$(grep 'gtk-icon-theme-name' "$config" | sed 's/.*\s*=\s*//')"
 cursor_theme="$(grep 'gtk-cursor-theme-name' "$config" | sed 's/.*\s*=\s*//')"
 cursor_size="$(grep 'gtk-cursor-theme-size' "$config" | sed 's/.*\s*=\s*//')"
 font_name="$(grep 'gtk-font-name' "$config" | sed 's/.*\s*=\s*//')"
-terminal=alacritty
+terminal=kitty
 
 echo $gtk_theme
 echo $icon_theme

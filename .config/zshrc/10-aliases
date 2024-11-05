@@ -19,3 +19,9 @@ alias shutdown='systemctl poweroff'
 # -----------------------------------------------------
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias top='btop'
+
+# -----------------------------------------------------
+# Kitty
+# -----------------------------------------------------
+alias icat="kitten icat"
+alias d="kitten diff"
