@@ -16,13 +16,7 @@
   "notification-body-image-height": 160,
   "notification-body-image-width": 200,
   "fit-to-screen": false,
-  "widgets": [
-    "buttons-grid",
-    "title",
-    "notifications",
-    "mpris",
-    "dnd"
-  ],
+  "widgets": ["buttons-grid", "title", "notifications", "mpris", "dnd"],
   "widget-config": {
     "title": {
       "text": "Notifications",
@@ -60,7 +54,7 @@
         {
           "label": "",
           "type": "toggle",
-          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && hyprshade on blue-light-filter || hyprshade off'",
+          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && hyprshade on nightmode || hyprshade off'",
           "update-command": "sh -c '[[ $(hyprshade current) == \"blue-light-filter\" ]] && echo true || echo false'"
         }
       ]
