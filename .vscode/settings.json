@@ -1,9 +1,0 @@
-{
-    "launch": {
-        "configurations": [],
-        "compounds": []
-    },
-    "files.associations": {
-        "*.json": "jsonc"
-    }
-}
