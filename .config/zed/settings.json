@@ -9,8 +9,8 @@
 {
   "base_keymap": "VSCode",
   "tab_size": 2,
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
   "format_on_save": "on",
   "telemetry": {
     "diagnostics": false,
