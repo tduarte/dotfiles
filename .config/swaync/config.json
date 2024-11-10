@@ -48,14 +48,14 @@
           "command": "overskride"
         },
         {
-          "label": "",
-          "command": "io.elementary.settings"
+          "label": "",
+          "command": "pwvucontrol"
         },
         {
           "label": "",
           "type": "toggle",
           "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && hyprshade on nightmode || hyprshade off'",
-          "update-command": "sh -c '[[ $(hyprshade current) == \"blue-light-filter\" ]] && echo true || echo false'"
+          "update-command": "sh -c '[[ $(hyprshade current) == \"nightmode\" ]] && echo true || echo false'"
         }
       ]
     }
