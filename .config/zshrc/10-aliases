@@ -5,6 +5,7 @@
 # -----------------------------------------------------
 # General
 # -----------------------------------------------------
+alias cd="z"
 alias c='clear'
 alias nf='fastfetch'
 alias pf='fastfetch'
@@ -13,6 +14,7 @@ alias ls='eza -a --icons'
 alias ll='eza -al --icons'
 alias lt='eza -a --tree --level=1 --icons'
 alias shutdown='systemctl poweroff'
+alias uninstall='yay -Runs'
 
 # -----------------------------------------------------
 # System
@@ -25,3 +27,7 @@ alias top='btop'
 # -----------------------------------------------------
 alias icat="kitten icat"
 alias d="kitten diff"
+
+# thefuck alias
+eval $(thefuck --alias)
+eval $(thefuck --alias fk)
