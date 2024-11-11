@@ -1,0 +1,48 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+window {
+  background-color: alpha(@background, 0.7);
+  color: #eeeeee;
+}
+
+/* search entry */
+entry {
+  background-color: rgba (0, 0, 0, 0.2);
+  padding: 0px 100px;
+}
+
+button,
+image {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: @color2;
+}
+
+/* in case you wanted to give category buttons a different look */
+#category-button {
+  /* margin: 0 10px 0 10px; */
+  padding: 10px;
+}
+
+#pinned-box {
+  padding-bottom: 5px;
+  border-bottom: 1px dotted gray;
+}
+
+#files-box {
+  padding: 5px;
+  border: 1px dotted gray;
+  border-radius: 15px;
+}
+
+/* math operation result label */
+#math-label {
+  font-weight: bold;
+  font-size: 16px;
+}
