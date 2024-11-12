@@ -1,57 +1,60 @@
-@import '../../.cache/wal/colors-waybar.css';
+@import "../../.cache/wal/colors-waybar.css";
 
 @define-color backgroundlight @foreground;
 @define-color backgrounddark @background;
-@define-color accentcolor @color1;
-@define-color border @color11;
-@define-color textdark @foreground;
+@define-color accentcolor @color5;
+@define-color border @color5;
+@define-color textdark #FFFFFF;
 
 window {
-    background-color: transparent;
-	text-shadow: none;
-	box-shadow: none;
+  background-color: transparent;
+  text-shadow: none;
+  box-shadow: none;
 }
 
 /* Outer bar container, takes all the window width/height */
 #outer-box {
-	margin: 0px;
-	background-color: transparent;
+  margin: 0px;
+  background-color: transparent;
 }
 
 /* Inner bar container, surrounds buttons */
 #inner-box {
-	background-color: @backgrounddark;
-	border-radius: 10px;
-	border-style: solid;
-	border-color: @border;
-	border-width: 2px;
-	box-shadow: none;
-	text-shadow: none;
-	padding: 5px;
-	margin: 5px
+  background-color: @backgrounddark;
+  border-radius: 12px;
+  border-style: solid;
+  border-color: @border;
+  border-width: 2px;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 8px;
+  margin: 8px;
+  opacity: 0.9;
 }
 
-button, image {
-	background: none;
-	border: none;
-	text-shadow: none;
-	box-shadow: none
+button,
+image {
+  background: none;
+  border: none;
+  text-shadow: none;
+  box-shadow: none;
 }
 
 button {
-	color: @textdark;
-	background: none;
-	border: none;
-	box-shadow: none;
-	text-shadow: none;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin: 5px
+  color: @textdark;
+  background: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 18px 24px;
+  -gtk-icon-shadow: none;
+  margin: 8px;
 }
 
 button:hover {
-	background-color: @accentcolor;
-	color: @backgroundlight;
-	text-shadow: none;
-	box-shadow: none;
+  background-color: @accentcolor;
+  color: @textdark;
+  text-shadow: none;
+  opacity: 1;
+  box-shadow: none;
 }
