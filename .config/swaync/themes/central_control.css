@@ -6,9 +6,11 @@
 .control-center {
   background: alpha(@backgrounddark, 0.5);
   border-radius: 10px;
-  border: 2px solid @selected;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
-  margin: 18px;
+  border: 1px solid alpha(@backgrounddark, 0.2);
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin: 0 18px;
   padding: 12px;
 }
 
@@ -22,6 +24,9 @@
   border-radius: 14px;
   margin: 4px 0px;
   padding: 8px;
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .control-center
@@ -292,42 +297,38 @@
 }
 
 /* Volume */
+
 .widget-volume {
   background: @hover;
-  border-radius: 8px;
-  min-width: 1.25rem;
+  border-radius: 6px;
 }
 
 .progressbar {
   color: white;
   background: @hover;
-  min-width: 1.5rem;
 }
 
 .widget-volume {
   background-color: transparent;
   padding: 10px;
-  min-width: 1.5rem;
 }
 
 .widget-volume trough {
-  /* OnePlus McClaren edition Orange accent */
   background: @buttons;
-  min-width: 1.5rem;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .widget-volume trough highlight {
   background-color: @hover;
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 6px;
 }
 
 .widget-volume trough slider {
-  /* OnePlus McClaren edition Orange accent */
   background-color: @text;
-  border-radius: 32px;
-  min-height: 1.7rem;
-  min-width: 1.7rem;
+  border-radius: 24px;
+  min-height: 24px;
+  margin: -4px 0;
+  min-width: 24px;
   box-shadow:
     rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px,

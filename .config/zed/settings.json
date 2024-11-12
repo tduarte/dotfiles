@@ -22,9 +22,9 @@
     "diagnostics": false,
     "metrics": false
   },
-  "theme": "tduarte",
+  "theme": "Pink Astronaut - Dark",
   "terminal": {
-    "font_family": "Hack Nerd Font Mono",
+    "font_family": "Zed Plex Mono",
     "blinking": "on",
     "font_size": 15,
     "working_directory": "current_project_directory",
