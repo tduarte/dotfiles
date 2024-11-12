@@ -16,7 +16,14 @@
   "notification-body-image-height": 160,
   "notification-body-image-width": 200,
   "fit-to-screen": false,
-  "widgets": ["buttons-grid", "title", "notifications", "mpris", "dnd"],
+  "widgets": [
+    "buttons-grid",
+    "title",
+    "notifications",
+    "mpris",
+    "volume",
+    "dnd"
+  ],
   "widget-config": {
     "title": {
       "text": "Notifications",
@@ -27,7 +34,7 @@
       "text": "Do Not Disturb"
     },
     "volume": {
-      "label": " "
+      "label": "   "
     },
     "label": {
       "max-lines": 1,
@@ -48,7 +55,7 @@
           "command": "overskride"
         },
         {
-          "label": "",
+          "label": "󰓃",
           "command": "pwvucontrol"
         },
         {
