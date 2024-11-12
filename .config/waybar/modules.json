@@ -30,10 +30,7 @@
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
-    "ignore-list": [
-      "Alacritty",
-      "kitty"
-    ],
+    "ignore-list": ["Alacritty", "kitty"],
     "app_ids-mapping": {
       "firefoxdeveloperedition": "firefox-developer-edition"
     },
@@ -57,11 +54,6 @@
   "custom/empty": {
     "format": ""
   },
-  // Tools
-  "custom/tools": {
-    "format": "",
-    "tooltip-format": "Tools"
-  },
   // Cliphist
   "custom/cliphist": {
     "format": "",
@@ -81,51 +73,17 @@
     "on-click": "kitty --class dotfiles-floating yay",
     "on-click-right": "gnome-software"
   },
-  // Updates
-  "custom/updates": {
-    "format": "  {}",
-    "interval": 1800,
-    "exec": "checkupdates | wc -l",
-    "exec-if": "exit 0",
-    "on-click": "kitty 'sudo pacman -Syu'; pkill -SIGRTMIN+8 waybar",
-    "on-click-right": "gnome-software",
-    "tooltip-format": "System Updates",
-    "signal": 8
-  },
-  // Wallpaper
-  "custom/wallpaper": {
-    "format": "",
-    "on-click": "waypaper",
-    "on-click-right": "~/.config/hypr/scripts/wallpaper-effects.sh",
-    "tooltip-format": "Left: Select a wallpaper\nRight: Select wallpaper effect"
-  },
   // Keybindings
   "custom/keybindings": {
     "format": "",
-    "on-click": "~/.config/hypr/scripts/keybindings.sh",
-    "tooltip": false
+    "on-click": "~/.config/hypr/scripts/rofi_keybinds.sh",
+    "tooltip-format": "Show all keybinds"
   },
   // Calculator
   "custom/calculator": {
     "format": "",
     "on-click": "gnome-calculator",
     "tooltip-format": "Open calculator"
-  },
-  // Rofi Application Launcher
-  "custom/appmenu": {
-    // START APPS LABEL
-    "format": "Apps",
-    // END APPS LABEL
-    "on-click": "sleep 0.2;rofi -show drun -replace",
-    "on-click-right": "~/.config/hypr/scripts/keybindings.sh",
-    "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
-  },
-  // Rofi Application Launcher
-  "custom/appmenuicon": {
-    "format": "",
-    "on-click": "sleep 0.2;rofi -show drun -replace",
-    "on-click-right": "~/.config/hypr/scripts/keybindings.sh",
-    "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
   },
   // Power Menu
   "custom/exit": {
@@ -166,13 +124,7 @@
     "format-alt": "{icon}  {time}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
-    "format-icons": [
-      " ",
-      " ",
-      " ",
-      " ",
-      " "
-    ]
+    "format-icons": [" ", " ", " ", " ", " "]
   },
   // Notification
   "custom/notification": {
@@ -201,9 +153,16 @@
     "interval": 60,
     "icon": false
   },
+  // Rofi Application Launcher
+  "custom/appmenuicon": {
+    "format": "󰣇",
+    "on-click": "sleep 0.2;rofi -show drun -replace",
+    "on-click-right": "~/.config/hypr/scripts/rofi_keybinds.sh",
+    "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
+  },
   "custom/quicklink2": {
     "format": "",
-    "on-click": "flatpak run io.github.zen_browser.zen",
+    "on-click": "zen-browser",
     "tooltip-format": "Open Zen Browser"
   },
   "custom/quicklink3": {
@@ -225,8 +184,10 @@
   "group/quicklinks": {
     "orientation": "horizontal",
     "modules": [
+      "custom/appmenuicon",
       "custom/quicklink2",
       "custom/quicklink3",
+      "custom/calculator",
       "custom/quicklinkempty"
     ]
   },

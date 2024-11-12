@@ -7,6 +7,7 @@
 @define-color backgroundlight @background;
 
 @define-color workspacesbackground1 @color5;
+@define-color accent @color5;
 @define-color workspacesbackground2 @foreground;
 
 @define-color bordercolor @foreground;
@@ -19,8 +20,8 @@
 @define-color iconcolor #FFFFFF;
 
 * {
-  font-family: "GNOME UI", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: "GNOME UI", "Font Awesome 6 Free", "Font Awesome 6 Brands",
+    FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   border: none;
   border-radius: 0px;
   text-shadow: none;
@@ -88,14 +89,14 @@ window#waybar {
 
 tooltip {
   border-radius: 10px;
-  background-color: @backgrounddark;
-  opacity: 0.8;
+  background-color: @backgroundlight;
+  opacity: 0.9;
   padding: 20px;
   margin: 0px;
 }
 
 tooltip label {
-  color: @textcolor1;
+  color: @textcolor;
 }
 
 /* -----------------------------------------------------
@@ -142,7 +143,6 @@ window#waybar.empty #window {
   background: transparent;
   border: 0;
   padding: 0;
-  margin: 0;
 }
 
 /* -----------------------------------------------------
@@ -187,12 +187,44 @@ window#waybar.empty #window {
 #custom-quicklink8,
 #custom-quicklink9,
 #custom-quicklink10,
+#custom-appmenuicon,
 #custom-waybarthemes {
   margin-right: 14px;
   font-size: 20px;
   font-weight: bold;
   opacity: 0.8;
   color: @iconcolor;
+}
+
+#custom-brave:hover,
+#custom-browser:hover,
+#custom-keybindings:hover,
+#custom-outlook:hover,
+#custom-filemanager:hover,
+#custom-teams:hover,
+#custom-chatgpt:hover,
+#custom-calculator:hover,
+#custom-windowsvm:hover,
+#custom-wallpaper:hover,
+#custom-settings:hover,
+#custom-system:hover,
+#custom-hyprshade:hover,
+#custom-cliphist:hover,
+#custom-hypridle:hover,
+#custom-tools:hover,
+#custom-quicklink1:hover,
+#custom-quicklink2:hover,
+#custom-quicklink3:hover,
+#custom-quicklink4:hover,
+#custom-quicklink5:hover,
+#custom-quicklink6:hover,
+#custom-quicklink7:hover,
+#custom-quicklink8:hover,
+#custom-quicklink9:hover,
+#custom-quicklink10:hover,
+#custom-appmenuicon:hover,
+#custom-waybarthemes:hover {
+  opacity: 1;
 }
 
 #custom-quicklink1,
@@ -204,60 +236,21 @@ window#waybar.empty #window {
 #custom-quicklink7,
 #custom-quicklink8,
 #custom-quicklink9,
-#custom-quicklink10 {
+#custom-quicklink10,
+#custom-appmenuicon {
   margin-right: 20px;
+}
+
+#custom-appmenuicon {
+  font-size: 24px;
+  margin-left: 8px;
+  color: @accent;
+  opacity: 1;
 }
 
 #custom-cliphist {
   font-size: 18px;
   margin-left: 10px;
-}
-
-#custom-tools {
-  margin-right: 12px;
-}
-
-#custom-hypridle.active {
-  color: @iconcolor;
-}
-
-#custom-hypridle.notactive {
-  color: #dc2f2f;
-}
-
-/* -----------------------------------------------------
- * Idle Inhibator
- * ----------------------------------------------------- */
-
-#idle_inhibitor {
-  margin-right: 17px;
-  font-size: 20px;
-  font-weight: bold;
-  opacity: 0.8;
-  color: @iconcolor;
-}
-
-#idle_inhibitor.activated {
-  margin-right: 15px;
-  font-size: 20px;
-  font-weight: bold;
-  opacity: 0.8;
-  color: #dc2f2f;
-}
-
-/* -----------------------------------------------------
- * Custom Modules
- * ----------------------------------------------------- */
-
-#custom-appmenu {
-  background-color: @backgrounddark;
-  font-size: 16px;
-  color: @textcolor1;
-  border-radius: 15px;
-  padding: 0px 10px 0px 10px;
-  margin: 8px 16px 8px 0px;
-  opacity: 0.8;
-  border: 3px solid @bordercolor;
 }
 
 /* -----------------------------------------------------
@@ -268,15 +261,22 @@ window#waybar.empty #window {
   margin: 0px 13px 0px 0px;
   padding: 0px;
   font-size: 20px;
-  color: @textcolor2;
+  color: @textcolor;
   opacity: 0.8;
+}
+
+#custom-exit:hover {
+  margin: 0px 13px 0px 0px;
+  padding: 0px;
+  font-size: 20px;
+  color: @textcolor;
+  opacity: 1;
 }
 
 /* -----------------------------------------------------
  * Custom Updates
  * ----------------------------------------------------- */
 
-#custom-updates,
 #custom-pacman,
 #custom-notification {
   background-color: @backgroundlight;
@@ -289,18 +289,9 @@ window#waybar.empty #window {
   opacity: 0.8;
 }
 
-#custom-updates.green {
-  background-color: @backgroundlight;
-}
-
-#custom-updates.yellow {
-  background-color: #ff9a3c;
-  color: #ffffff;
-}
-
-#custom-updates.red {
-  background-color: #dc2f2f;
-  color: #ffffff;
+#custom-pacman:hover,
+#custom-notification:hover {
+  opacity: 1;
 }
 
 /* -----------------------------------------------------
@@ -322,25 +313,6 @@ window#waybar.empty #window {
 }
 
 /* -----------------------------------------------------
- * Hardware Group
- * ----------------------------------------------------- */
-
-#disk,
-#memory,
-#cpu,
-#language {
-  margin: 0px;
-  padding: 0px;
-  font-size: 16px;
-  font-weight: 600;
-  color: @iconcolor;
-}
-
-#language {
-  margin-right: 10px;
-}
-
-/* -----------------------------------------------------
  * Clock
  * ----------------------------------------------------- */
 
@@ -356,121 +328,6 @@ window#waybar.empty #window {
   /* border:3px solid @bordercolor;    */
 }
 
-/* -----------------------------------------------------
- * Backlight
- * ----------------------------------------------------- */
-
-#backlight {
-  background-color: @backgroundlight;
-  font-size: 16px;
-  color: @textcolor2;
-  border-radius: 15px;
-  padding: 2px 10px 0px 10px;
-  margin: 8px 15px 8px 0px;
-  opacity: 0.8;
-}
-
-/* -----------------------------------------------------
- * Pulseaudio
- * ----------------------------------------------------- */
-
-#pulseaudio {
-  background-color: @backgroundlight;
-  font-size: 16px;
-  font-weight: 600;
-  color: @textcolor2;
-  border-radius: 15px;
-  padding: 2px 10px 0px 10px;
-  margin: 8px 15px 8px 0px;
-  opacity: 0.8;
-}
-
-#pulseaudio.muted {
-  background-color: @backgrounddark;
-  color: @textcolor1;
-}
-
-/* -----------------------------------------------------
- * Network
- * ----------------------------------------------------- */
-
-#network {
-  background-color: @backgroundlight;
-  font-size: 16px;
-  font-weight: 600;
-  color: @textcolor2;
-  border-radius: 15px;
-  padding: 2px 10px 0px 10px;
-  margin: 8px 15px 8px 0px;
-  opacity: 0.8;
-}
-
-#network.ethernet {
-  background-color: @backgroundlight;
-  color: @textcolor2;
-}
-
-#network.wifi {
-  background-color: @backgroundlight;
-  color: @textcolor2;
-}
-
-/* -----------------------------------------------------
- * Bluetooth
- * ----------------------------------------------------- */
-
-#bluetooth,
-#bluetooth.on,
-#bluetooth.connected {
-  background-color: @backgroundlight;
-  font-size: 16px;
-  font-weight: 600;
-  color: @textcolor2;
-  border-radius: 15px;
-  padding: 2px 10px 0px 10px;
-  margin: 8px 15px 8px 0px;
-  opacity: 0.8;
-}
-
-#bluetooth.off {
-  background-color: transparent;
-  padding: 0px;
-  margin: 0px;
-}
-
-/* -----------------------------------------------------
- * Battery
- * ----------------------------------------------------- */
-
-#battery {
-  background-color: @backgroundlight;
-  font-size: 16px;
-  color: @textcolor2;
-  border-radius: 15px;
-  padding: 2px 15px 0px 10px;
-  margin: 8px 15px 8px 0px;
-  opacity: 0.8;
-}
-
-#battery.charging,
-#battery.plugged {
-  color: @textcolor2;
-  background-color: @backgroundlight;
-}
-
-@keyframes blink {
-  to {
-    background-color: @backgroundlight;
-    color: @textcolor2;
-  }
-}
-
-#battery.critical:not(.charging) {
-  background-color: #f53c3c;
-  color: @textcolor3;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+#clock:hover {
+  opacity: 1;
 }
