@@ -48,3 +48,4 @@
 .config/hypr/conf/keyboard.conf-bak
 .config/hypr/conf/monitors.conf-bak
 .config/hypr/conf/workspaces.conf-bak
+.config/btop/btop.log

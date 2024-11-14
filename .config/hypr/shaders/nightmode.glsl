@@ -5,7 +5,7 @@ varying vec2 v_texcoord;
 uniform sampler2D tex;
 
 const float temperature = 2600.0;
-const float temperatureStrength = 0.3;
+const float temperatureStrength = 0.5;
 
 #define WithQuickAndDirtyLuminancePreservation
 const float LuminancePreservationFactor = 1.0;
