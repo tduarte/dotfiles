@@ -1,3 +1,9 @@
 [submodule ".oh-my-zsh"] 
   path = .oh-my-zsh
   url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule ".config/.config/ags"]
+	path = .config/.config/ags
+	url = https://github.com/Jas-SinghFSU/HyprPanel.git
+[submodule ".config/ags"]
+	path = .config/ags
+	url = https://github.com/Jas-SinghFSU/HyprPanel.git
