@@ -13,6 +13,8 @@ config_file="$HOME/.config/hypr/conf/keybinding.conf"
 echo "Reading from: $config_file"
 
 keybinds=""
+dir="$HOME/.config/rofi/launchers/type-6"
+theme='style-10'
 
 # Detect Start String
 while read -r line
@@ -41,4 +43,4 @@ do
 done < "$config_file"
 
 sleep 0.2
-rofi -dmenu -i -markup -eh 2 -replace -p "Keybinds" <<< "$keybinds"
+rofi -dmenu -theme ${dir}/${theme}.rasi  -i -markup -eh 2 -replace -p "Keybinds" <<< "$keybinds"

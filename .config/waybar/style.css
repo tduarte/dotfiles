@@ -3,21 +3,15 @@
  * ----------------------------------------------------- */
 @import "../../.cache/wal/colors-waybar.css";
 
-@define-color backgrounddark @foreground;
-@define-color backgroundlight @background;
+@define-color backgroundColor @background;
+@define-color foregroundColor @foreground;
 
-@define-color workspacesbackground1 @color5;
 @define-color accent @color5;
-@define-color workspacesbackground2 @foreground;
+@define-color bordercolor @foregroundColor;
+@define-color iconcolor @foregroundColor;
 
-@define-color bordercolor @foreground;
-
-@define-color textcolor #FFFFFF;
-@define-color textcolor1 @background;
-@define-color textcolor2 @foreground;
-@define-color textcolor3 @color11;
-
-@define-color iconcolor #FFFFFF;
+@define-color textcolor @foregroundColor;
+@define-color textcolor1 @backgroundColor;
 
 * {
   font-family: "GNOME UI", "Font Awesome 6 Free", "Font Awesome 6 Brands",
@@ -28,7 +22,7 @@
 }
 
 window#waybar {
-  background: alpha(@backgroundlight, 0.2);
+  background: alpha(@backgroundColor, 0.2);
   border-bottom: 0px solid @bordercolor;
   color: @textcolor1;
   transition-property: background-color;
@@ -44,7 +38,7 @@ window#waybar {
  * ----------------------------------------------------- */
 
 #workspaces {
-  background: @workspacesbackground2;
+  background: alpha(@backgroundColor, 0.2);
   margin: 5px 1px 6px 1px;
   padding: 0px 1px;
   border-radius: 15px;
@@ -53,7 +47,7 @@ window#waybar {
   font-style: normal;
   opacity: 0.8;
   font-size: 16px;
-  color: @textcolor2;
+  color: @textcolor;
 }
 
 #workspaces button {
@@ -62,14 +56,14 @@ window#waybar {
   border-radius: 15px;
   border: 0px;
   color: transparent;
-  background-color: @workspacesbackground1;
+  background-color: @accent;
   transition: all 0.3s ease-in-out;
   opacity: 0.4;
 }
 
 #workspaces button.active {
-  color: @textcolor2;
-  background: alpha(@workspacesbackground1, 0.9);
+  color: @textcolor;
+  background: alpha(@accent, 0.9);
   border-radius: 15px;
   min-width: 40px;
   transition: all 0.3s ease-in-out;
@@ -77,8 +71,8 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  color: @textcolor2;
-  background: alpha(@workspacesbackground1, 1);
+  color: @textcolor;
+  background: alpha(@accent, 1);
   border-radius: 15px;
   opacity: 1;
 }
@@ -89,7 +83,7 @@ window#waybar {
 
 tooltip {
   border-radius: 10px;
-  background-color: @backgroundlight;
+  background-color: @backgroundColor;
   opacity: 0.9;
   padding: 20px;
   margin: 0px;
@@ -104,7 +98,7 @@ tooltip label {
  * ----------------------------------------------------- */
 
 #window {
-  background: #ffffff;
+  background: @foreground;
   margin: 8px 15px 8px 0px;
   padding: 2px 10px 0px 10px;
   border-radius: 12px;
@@ -123,14 +117,14 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #taskbar {
-  background: @backgroundlight;
+  background: @foreground;
   margin: 6px 15px 6px 0px;
   padding: 0px;
   border-radius: 15px;
   font-weight: 600;
   font-style: normal;
   opacity: 0.8;
-  border: 3px solid @backgroundlight;
+  border: 3px solid @foreground;
 }
 
 #taskbar button {
@@ -279,7 +273,7 @@ window#waybar.empty #window {
 
 #custom-pacman,
 #custom-notification {
-  background-color: @backgroundlight;
+  background-color: @backgroundColor;
   font-size: 16px;
   font-weight: 600;
   color: @textcolor;
@@ -301,7 +295,7 @@ window#waybar.empty #window {
 #tray {
   font-size: 16px;
   padding: 0 4px;
-  color: @textcolor3;
+  color: @textcolor1;
 }
 
 #tray > .passive {
@@ -317,7 +311,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #clock {
-  background-color: #ffffff;
+  background-color: @foreground;
   font-size: 16px;
   font-weight: 600;
   color: @textcolor1;

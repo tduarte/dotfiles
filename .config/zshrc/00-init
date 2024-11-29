@@ -5,8 +5,8 @@
 # -----------------------------------------------------
 # Exports
 # -----------------------------------------------------
-export EDITOR=nvim
+export EDITOR=zeditor
 export PATH="/usr/lib/ccache/bin/:$PATH"
-export ZSH="$HOME/.oh-my-zsh"
 export GOPATH=$HOME/go
 export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
+export PATH=$HOME/.config/rofi/scripts:$PATH

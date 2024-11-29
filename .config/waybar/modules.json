@@ -70,7 +70,7 @@
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --interval-seconds 1800 --network-interval-seconds 1800",
-    "on-click": "kitty --class dotfiles-floating yay",
+    "on-click": "kitty --class dotfiles-floating pacseek -u",
     "on-click-right": "gnome-software"
   },
   // Keybindings

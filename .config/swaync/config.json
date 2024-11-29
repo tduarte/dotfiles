@@ -16,6 +16,18 @@
   "notification-body-image-height": 160,
   "notification-body-image-width": 200,
   "fit-to-screen": false,
+  "scripts": {
+    "sound": {
+      "exec": "mpv /usr/share/sounds/freedesktop/stereo/bell.oga",
+      "run-on": "receive",
+      "app-name": "^(?!de.haeckerfelix.Fragments|equibop).*"
+    },
+    "complete": {
+      "exec": "mpv /usr/share/sounds/freedesktop/stereo/complete.oga",
+      "run-on": "receive",
+      "app-name": "de.haeckerfelix.Fragments"
+    }
+  },
   "widgets": [
     "buttons-grid",
     "title",

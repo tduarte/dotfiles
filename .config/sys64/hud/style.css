@@ -1,0 +1,113 @@
+@import "/home/tduarte/.cache/wal/colors-waybar.css";
+
+* {
+  box-shadow: unset;
+  -gtk-icon-shadow: none;
+  -gtk-icon-transform: unset;
+  min-height: unset;
+  text-shadow: unset;
+}
+#syshud {
+  background: transparent;
+}
+
+#syshud .box_layout {
+  background: @background;
+  border-radius: 35px;
+  border: 3px solid alpha(@color5, 1);
+  margin: 10px;
+  padding: 0 24px 0 0;
+}
+
+#syshud scale {
+  margin: 0px;
+  padding: 0px;
+}
+#syshud label {
+  color: alpha(@theme_fg_color, 0.5);
+}
+
+/* Horizontal layout */
+#syshud scale.horizontal {
+  padding: 0px;
+  min-height: 5px;
+}
+#syshud scale.horizontal trough {
+  border-radius: 3px;
+  background: alpha(currentColor, 0.1);
+  min-height: 5px;
+  padding: 0px;
+}
+#syshud scale.horizontal highlight {
+  all: unset;
+  border-radius: 3px;
+  min-height: 5px;
+  background: alpha(@color5, 1);
+  margin: 0px;
+  box-shadow: unset;
+  -gtk-icon-shadow: none;
+  -gtk-icon-transform: unset;
+  min-height: unset;
+  text-shadow: unset;
+}
+/* THIS THIS THIS */
+#syshud scale.horizontal slider {
+  all: unset;
+}
+
+/* Vertical layout */
+#syshud scale.vertical {
+  padding: 0px;
+  min-width: 5px;
+  box-shadow: unset;
+  -gtk-icon-shadow: none;
+  -gtk-icon-transform: unset;
+  min-height: unset;
+  text-shadow: unset;
+}
+#syshud scale.vertical trough {
+  border-radius: 3px;
+  background: alpha(currentColor, 1);
+  min-width: 5px;
+  padding: 0px;
+  box-shadow: unset;
+  -gtk-icon-shadow: none;
+  -gtk-icon-transform: unset;
+  min-height: unset;
+  text-shadow: unset;
+}
+#syshud scale.vertical highlight {
+  border-radius: 3px;
+  min-width: 5px;
+  background: transparent;
+  border-color: transparent;
+  border: none;
+  margin: 0px;
+  box-shadow: unset;
+  -gtk-icon-shadow: none;
+  -gtk-icon-transform: unset;
+  min-height: unset;
+  text-shadow: unset;
+}
+#syshud scale.vertical slider {
+  margin: 0px;
+  background: transparent;
+  min-width: 5px;
+  box-shadow: none;
+  padding: 0px;
+  box-shadow: unset;
+  -gtk-icon-shadow: none;
+  -gtk-icon-transform: unset;
+  min-height: unset;
+  text-shadow: unset;
+}
+
+/* Levels */
+#syshud .muted {
+}
+#syshud .low {
+}
+#syshud .medium {
+}
+#syshud .high {
+}
